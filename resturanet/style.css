@@ -1,0 +1,268 @@
+.docSlider-pager {
+    position: fixed;
+    z-index: 100;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  
+   
+  }
+  
+  /* CHANGE THE BUTTON STYLE */
+  .docSlider-button {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    margin: 5px 0;
+    background-color: gold;
+    opacity: .25;
+    appearance: none;
+    border: none;
+    box-sizing: border-box;
+  }
+  
+  .docSlider-button.selected {
+    opacity: 1;
+  }
+  
+  .docSlider-button:active {
+    outline: none;
+  }
+  
+  /**------------------------------
+    REWRITING IS NOT RECOMMENDED
+   -----------------------------**/
+  html, body {
+
+  
+  }
+  
+  html, body,
+  .docSlider,
+  .docSlider-inner,
+  .docSlider-page {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    appearance: none;
+    border: none;
+  
+  }
+  
+  html:active, body:active,
+  .docSlider:active,
+  .docSlider-inner:active,
+  .docSlider-page:active {
+    outline: ;
+  }
+  
+  .docSlider {
+   
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .docSlider-inner {
+    width: inherit;
+    height: inherit;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .docSlider-page {
+    height: 100%;
+    width: inherit;
+    overflow: auto;
+    position: absolute;
+    overflow-scrolling: touch;
+  }
+  section:nth-child(odd){
+    background-color: #eee;
+}
+.inner{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 2em;
+    width: 100%;
+}
+.inner{
+    position: relative;
+}
+.inner-txt{
+    position: absolute;
+    top: 100px;
+}
+.inner-txt h1{
+    font-size: 85px;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    font-family:  'Times New Roman', Times, serif;
+    color: rgb(255, 225, 168);
+    font-weight: bold;
+    color: cornsilk;
+}
+.inner-txt h3{
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:  'Times New Roman', Times, serif;
+    color: gold;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+.menu{
+    margin-left: -30px;
+    display: flex;
+    flex-direction:row;
+    margin-top: 100px;
+}
+.inner-txt a{
+    font-size: 20px;
+    display: flex;
+    align-items: center !important;
+    justify-content: center;
+    font-family:  'Times New Roman', Times, serif;
+    color:  lemonchiffon;
+    background-color: lemonchiffon;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 150px;
+    margin-left: 50px;
+    margin-top: 60px;
+ transition: all .5s ease;
+}
+
+.inner-txt a:hover{
+  transform: scale(1.1);
+ 
+}
+.inner-txt h4{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:  'Times New Roman', Times, serif;
+    color:  goldenrod  ;
+    font-weight: bold;
+   margin-top: 100px;
+background-color: dimgray;
+width: 130px;
+height: 30px;
+margin-left: 400px;
+border-radius: 10px;
+transition: all .5s ease;
+}
+.inner-txt h4:hover{
+transform: scale(1.1);
+background-color: aliceblue;
+color: black;
+}
+.world h1{
+    color:  darkslategrey !important; 
+}
+.world h3{
+    color:  darkslategrey !important; 
+}
+.world a{
+    color:  darkslategrey !important; 
+    background-color: burlywood !important;
+    width: 100px;
+border-radius: 10px;
+}
+.myimg{
+    margin-left: -20px !important;
+ position: absolute;
+}
+.mybtn{
+    margin-left: 450px  !important;
+}
+
+@media only screen and (max-width: 828px) {
+   
+    html {
+        font-size: 56.25%;
+    }
+    .inner-txt a{
+        font-size: 20px;
+    
+        margin-left: 10px;
+        flex-direction:column !important;
+      
+    }
+    .mybtn{
+        margin-left: 140px  !important;
+    }
+    .myimg {
+       margin-top: -800px !important;
+    }
+    .menu{
+        margin-left: 10px;
+        flex-direction:column !important;
+        margin-top: -20px;
+        line-height: 20px;
+    }
+    .menu a{
+        margin-bottom: -30px;
+    }
+    .inner-txt h4{
+        font-size: 20px;
+    margin-top: 100px;
+    margin-left: 140px;
+    justify-content: center;
+    }
+    .inner-txt h1{
+        font-size: 40px;
+        flex-direction: column;
+        display: flex;
+        justify-content: center  !important;
+        align-items: center !important;
+        font-family:  'Times New Roman', Times, serif;
+        color: rgb(255, 225, 168); 
+       
+        margin-left: 20px;
+    
+       justify-content:center ;
+       align-items: center;
+       text-align: center;
+    }
+    .world a{
+        margin-top: 40px;
+    }
+    .inner-txt h3{
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family:  'Times New Roman', Times, serif;
+        color: rgb(255, 225, 168);
+    }
+    
+}
+
+/*------ width < 61.94em ------*/
+@media only screen and (max-width: 61.94em) {
+    html {
+        font-size: 53.13%;
+    }
+}
+
+/*------ width < 48em ------*/
+@media only screen and (max-width: 48em) {
+    html {
+        font-size: 50%;
+    }
+}
